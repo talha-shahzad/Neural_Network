@@ -15,10 +15,18 @@ smaller batches and each batch is processed by a separate layer in the network. 
 its input batch from the previous layer through a pipe and then apply the weights and biases to generate
 the output. The output is passed to the next layer as input through another pipe.
 
-**Instruction**
-For this code to run corrctly
-make an executable of these names
-Ai.cpp as input
-Ah.cpp as h
-Ah2.cpp as h1
+### Compilation Instructions
+
+To compile the C++ files with the specified executable names, run the following commands in your terminal:
+
+```bash
+# Compile each C++ file with specified output names
+g++ Ai.cpp -o input       # Compile Ai.cpp to executable 'input'
+g++ Ah.cpp -o h           # Compile Ah.cpp to executable 'h'
+g++ Ah2.cpp -o h1         # Compile Ah2.cpp to executable 'h1'
+# Run the code by writing the command below
+./input arg1 arg2
+# arg1 specifies if its the forward propogation or backward. For forward arg1 should be '1'.
+# arg2 tells the number of hidden layer so it can be any integer values lets say '4'.
+
 
